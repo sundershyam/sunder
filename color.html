@@ -1,0 +1,42 @@
+<html>
+<head>
+<script>
+function fun()
+{
+var h = document.getElementById('Color').value;
+if(h=="Red"){
+document.getElementById('show').style.color="red";
+document.getElementById('body').style.background="red";
+}
+if(h=="Blue"){
+document.getElementById('show').style.color="blue";
+document.getElementById('body').style.background="blue";
+
+}
+if(h=="Green"){
+document.getElementById('show').style.color="green";
+document.getElementById('body').style.background="green";
+}
+}
+</script>
+<style>
+*{
+font-size:50px;
+}
+div{
+
+}
+</style>
+</head>
+<body id="body" >
+<input type=text id="show" placeholder="Select Color" />
+<br><br>
+<select id="Color" >
+<option value="Red">Red</option>
+<option value="Blue">Blue</option>
+<option value="Green">Green</option>
+</select>
+<Button type=button onclick="fun()">Select Color</button>
+<div></div>
+</body>
+</html>
